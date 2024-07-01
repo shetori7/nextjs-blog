@@ -28,10 +28,88 @@
 }
 
 .grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
   gap: 40px;
+  margin: 2rem;
+}
+
+.maincontents{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px; /* 上下左右に20pxのマージンを設定 */
+}
+
+.sidebar {
+  flex: 0.7 0.5;
+  min-width: 18rem;
+  overflow-wrap: break-word;
+  margin-left: 10px; /* 上下左右に20pxのマージンを設定 */
+  padding: auto;
+}
+
+.bio {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  background-color: #fff;
+  border-radius: 3rem;;
+  flex: 2 1;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 3rem;
+  width: 3rem;
+}
+
+.sideBarImage {
+  border-radius: 1000px;
+  border: solid 1px #777777;
+  width: 5rem;
+  transition: 0.3s;
+}
+
+.sideBarImage:hover {
+  box-shadow: 0 0 20px rgba(107, 143, 203, 0.9);
+  transform: translateY(-4px);
+}
+
+.icon{
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.sidebarMessage{
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  /* text-align: left; */
+}
+
+.articleGrid{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.abstract{
+  width: 40rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+  margin-top: 0.4rem;
+  text-overflow: ellipsis;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

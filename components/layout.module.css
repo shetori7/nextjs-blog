@@ -5,9 +5,13 @@
   }
   
   .header {
+    width: 100%; /* ヘッダーの幅を全体に */
+    /* position: fixed; ヘッダーを固定する */
+    top: 0; /* 上端に配置 */
+    background-color: #ffffff; /* ヘッダーの背景色 */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: center; /* アイテムを垂直方向の中央に配置 */
+    border-bottom: 2px solid #ccc; /* ヘッダーの下に灰色の線を追加 */
   }
   
   .headerImage {
@@ -16,10 +20,12 @@
   }
   
   .headerHomeImage {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
   }
   
   .backToHome {
     margin: 3rem 0 0;
   }
+
+

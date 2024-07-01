@@ -3,25 +3,25 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css"
 import Link from "next/link";
 
-const name="Hiroshi Miyamoto"
-export const siteTitle="Next.js blog"
+const name="こうのとりの開発ブログ"
+export const siteTitle="こうのとりの開発ブログ"
 
 function Layouts({children ,home}) {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
-                <link rel="icon" href="/favicon.ico"></link>
+                <link rel="icon" href="/images/shetori_big.jpg"></link>
             </Head>
             <header className={styles.header}>
                 {home ? (
                     <>
-                        <img src="/images/profile.png" className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}></img>
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <img src="/images/shetori.jpg" className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}></img>
+                        <h1 className={utilStyles.headingXl}>{name}</h1>
                     </>
                 ):(
                     <>
-                        <img src="/images/profile.png" className={`${utilStyles.borderCircle} ${styles.headerImage}`}></img>
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <img src="/images/shetori.jpg" className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}></img>
+                        <h1 className={utilStyles.headingXl}>{name}</h1>
                     </>
                 )}
 
