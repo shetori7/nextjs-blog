@@ -27,7 +27,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 1.5rem;
 }
 

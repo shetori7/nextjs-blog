@@ -1,7 +1,8 @@
 import { useStyleRegistry } from "styled-jsx";
 import Layout from "../../components/Layouts";
 import { getAllPostsIds, getPostData } from "@/lib/post";
-import utilStyles from "../../styles/utils.module.css"
+import utilStyles from "../../styles/utils.module.css";
+import homeStyle from "@/styles/Home.module.css";
 
 
 export async function getStaticPaths() {
@@ -26,10 +27,10 @@ export async function getStaticProps({ params }){
 export default function Post({ postData }) {
     return (
         <Layout>
-            <article>
+            <article className={`${homeStyle.global}`}>
                 <h1 className={utilStyles.headingX1}>{postData.title}</h1>
                 <div className={utilStyles.lightText}>{postData.date}</div>
-                <div dangerouslySetInnerHTML={{__html:postData.blogContentHTML}}/>
+                <div className={utilStyles.contentText} dangerouslySetInnerHTML={{__html:postData.blogContentHTML}}/>
             </article>
         </Layout>
     );

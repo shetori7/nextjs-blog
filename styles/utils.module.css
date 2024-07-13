@@ -54,6 +54,11 @@
     color: #999;
     text-align:left
   }
+
+  .contentText {
+    color: #000000;
+    text-align:left
+  }
   
   .boldText {
     color: rgb(88, 128, 229);

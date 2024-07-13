@@ -25,13 +25,6 @@ export async function getStaticProps(){
 export default function Home({ allPostsData }) {
   return(
     <Layouts home>
-      <Head>
-        <title>{siteTitle}</title>
-        <meta name="description" content="これはホームページの説明です" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <div className={styles.maincontents}>
           <div className={styles.global}>
             <div className={styles.grid}>
               {allPostsData.map(({id,title,date,content})=>(
@@ -53,19 +46,7 @@ export default function Home({ allPostsData }) {
               ))}
             </div>
           </div>
-          <div className={styles.sidebar}>
-            <div className={styles.bio}>
-              <div className={styles.icon}>
-                <img src="/images/shetori.jpg" className={styles.sideBarImage}></img>
-              </div>
-              <div className={styles.sidebarMessage}>
-                都内SIer勤務のSEです。未経験~中級者向けに< br/>
-                わかりやすくIT技術解説をします。
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </Layouts>
   );
 }
