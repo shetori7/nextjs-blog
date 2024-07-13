@@ -10,7 +10,7 @@ function Layouts({children ,home}) {
     return (
         <div>
             <Head>
-                <link rel="icon" href="/images/shetori_big.jpg"></link>
+                <link rel="icon" href="/images/shetori_big.png"></link>
             </Head>
             <header className={styles.header}>
                 {home ? (

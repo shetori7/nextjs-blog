@@ -60,7 +60,7 @@ export default function Home({ allPostsData }) {
           <div className={styles.sidebar}>
             <div className={styles.bio}>
               <div className={styles.icon}>
-                <img src="/images/shetori.jpg" className={styles.sideBarImage}></img>
+                <img src="/images/shetori.png" className={styles.sideBarImage}></img>
               </div>
               <div className={styles.sidebarMessage}>
                 都内SIer勤務のSEです。未経験~中級者向けに< br/>
