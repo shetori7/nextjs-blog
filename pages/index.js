@@ -27,20 +27,16 @@ export default function Home({ allPostsData }) {
     <Layouts home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="description" content="これはホームページの説明です" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={styles.maincontents}>
           <div className={styles.global}>
             <div className={styles.grid}>
-              {allPostsData.map(({id,title,date,thumbnail,content})=>(
+              {allPostsData.map(({id,title,date,content})=>(
                 <article key={id}>
-                  <div clssName={styles.articleGrid}>
-                    {/* <Link href={`/posts/${id}`}>
-                      <img 
-                        src={`${thumbnail}`}
-                        className={styles.thumbnailImage}
-                      ></img>
-                    </Link> */}
+                  <div className={styles.articleGrid}>
                     <div className={styles.titile}>
                       <Link legacyBehavior href={`/posts/${id}`}>
                         <a className={utilStyles.boldText}>{title}</a>
@@ -60,7 +56,7 @@ export default function Home({ allPostsData }) {
           <div className={styles.sidebar}>
             <div className={styles.bio}>
               <div className={styles.icon}>
-                <img src="/images/shetori.png" className={styles.sideBarImage}></img>
+                <img src="/images/shetori.jpg" className={styles.sideBarImage}></img>
               </div>
               <div className={styles.sidebarMessage}>
                 都内SIer勤務のSEです。未経験~中級者向けに< br/>

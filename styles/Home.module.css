@@ -13,26 +13,12 @@
   align-items: center;
 }
 
-.thumbnailImage {
-  width: 950px;
-  height: 400px;
-  margin-bottom: 20px;
-  box-shadow: 4px 5px 12px black;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.thumbnailImage:hover {
-  transform: translate(4px, 5px);
-  box-shadow: none;
-}
-
 .grid {
   display: flex;
   flex-direction: column;
   align-items:flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 100rem;
   gap: 40px;
   margin: 2rem;
 }
@@ -42,14 +28,14 @@
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20px; /* 上下左右に20pxのマージンを設定 */
+  margin: 1.5rem;
 }
 
 .sidebar {
   flex: 0.7 0.5;
   min-width: 18rem;
   overflow-wrap: break-word;
-  margin-left: 10px; /* 上下左右に20pxのマージンを設定 */
+  margin-left: 1.5rem;
   padding: auto;
 }
 
@@ -90,22 +76,23 @@
 .sidebarMessage{
   font-size: 0.95rem;
   margin-top: 1rem;
-  /* text-align: left; */
 }
 
 .articleGrid{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .abstract{
-  width: 40rem;
+  width: 60rem;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
   margin-top: 0.4rem;
   text-overflow: ellipsis;
+  max-width: 100rem;
 }
 
 .title{
