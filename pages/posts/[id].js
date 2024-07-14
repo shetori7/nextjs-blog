@@ -30,7 +30,6 @@ export default function Post({ postData }) {
             <article className={`${homeStyle.global}`}>
                 <h1 className={utilStyles.headingX1}>{postData.title}</h1>
                 <div className={utilStyles.lightText}>{postData.date}</div>
-                <div>{postData.abstract}</div>
                 <div className={utilStyles.contentText} dangerouslySetInnerHTML={{__html:postData.blogContentHTML}}/>
             </article>
         </Layout>
