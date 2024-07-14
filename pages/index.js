@@ -12,7 +12,6 @@ const inter = Inter({ subsets: ["latin"] });
 //ssgの場合
 export async function getStaticProps(){
   const allPostsData=getPostsData();
-  // console.log(allPostsData);
 
   return{
     props: {
@@ -27,7 +26,7 @@ export default function Home({ allPostsData }) {
     <Layouts home>
           <div className={styles.global}>
             <div className={styles.grid}>
-              {allPostsData.map(({id,title,date,content})=>(
+              {allPostsData.map(({id,title,date,abstract})=>(
                 <article key={id}  className={styles.article}>
                     <div>
                       <Link legacyBehavior href={`/posts/${id}`}>
@@ -38,7 +37,7 @@ export default function Home({ allPostsData }) {
                       {date}
                     </div>
                     <div className={styles.abstract}>
-                      {content}
+                      {abstract}
                     </div>
                 </article>
               ))}
