@@ -16,6 +16,8 @@ body {
 a {
   color: #0070f3;
   text-decoration: none;
+  text-align:left;
+  display: block;
 }
 
 a:hover {

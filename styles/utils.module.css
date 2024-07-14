@@ -61,8 +61,31 @@
   }
   
   .boldText {
-    color: rgb(88, 128, 229);
     font-weight: 550;
     font-size: 2rem;
   }
+
+  @media  only screen and (max-width: 479px) {
+    .lightText {
+      color: #999;
+      text-align:left;
+      font-size: rem;
+      font-size: 1rem;
+
+      
+    }
+  
+    .contentText {
+      color: #000000;
+      text-align:left;
+      font-size: 1rem;
+    }
+    
+    .boldText {
+      color: rgb(88, 128, 229);
+      font-weight: 550;
+      font-size: 1rem;
+    }
+  }
+  
 

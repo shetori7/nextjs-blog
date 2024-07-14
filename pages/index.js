@@ -28,9 +28,8 @@ export default function Home({ allPostsData }) {
           <div className={styles.global}>
             <div className={styles.grid}>
               {allPostsData.map(({id,title,date,content})=>(
-                <article key={id}>
-                  <div className={styles.articleGrid}>
-                    <div className={styles.titile}>
+                <article key={id}  className={styles.article}>
+                    <div>
                       <Link legacyBehavior href={`/posts/${id}`}>
                         <a className={utilStyles.boldText}>{title}</a>
                       </Link>
@@ -41,7 +40,6 @@ export default function Home({ allPostsData }) {
                     <div className={styles.abstract}>
                       {content}
                     </div>
-                  </div>
                 </article>
               ))}
             </div>
