@@ -3,6 +3,7 @@ import styles from "./layout.module.css";
 import homeStyle from "@/styles/Home.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react"
 
 const name = "こうのとりの開発ブログ";
 export const siteTitle = "こうのとりの開発ブログ";
