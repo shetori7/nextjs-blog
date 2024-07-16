@@ -17,6 +17,7 @@ function Layouts({ children, home }) {
         <meta name="description" content="開発ブログ" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Analytics />
       <header className={styles.header}>
         {home ? (
           <>
